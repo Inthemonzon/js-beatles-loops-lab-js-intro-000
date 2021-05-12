@@ -7,25 +7,20 @@ function theBeatlesPlay(musicians, instruments) {
   return array
 }
 
-function johnLennonFacts() {
-  var facts = ["He was the last Beatle to learn to drive",
-  "He was never a vegetarian",
-  "He was a choir boy and boy scout",
-  "He hated the sound of his own voice",];
-var array = []
-var i = 0
-while (array.length < facts.length) {
-    array.push(facts[i] + "!!!");
+function johnLennonFacts(facts) {
+  let i = 0
+  while (i < facts.length) {
+    facts[i] = facts[i] + "!!!";
     i++;
   }
-  return array;
+  return facts;
 }
 
 function iLoveTheBeatles(number) {
   var array = [];
   do {
     array.push("I love the Beatles!");
-    number += 1
+    number++
   } while (number < 15);
   return array
 }
